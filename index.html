@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Sign Up</title>
+  </head>
+  <body>
+    <main class="">
+      <div class="main">
+        <div class="first">
+          <div class="desc">
+            <h1>Learn to code by watching others</h1>
+            <h4>See how experienced developers solve problems in real-time. Watching scripted tutorials is great, 
+              but understanding how developers think is invaluable.</h4>
+          </div>
+        </div>
+        <div class="second">
+          <div class="sub-second">
+            <h5 class="bold">Try it free 7 days</h5>
+            <h5>then $20/mo. thereafter</h5>   
+          </div>
+          <div class="form-container">
+            <form id="form1" novalidate>
+              <i><p class="sucess">Your Data has been saved sucessfully!</p></i>
+              <input type="text"  placeholder="Your First name" id="fname">
+              <i><p class="error fname">First Name section cannot be empty!</p></i>
+              <input type="text"  placeholder="Your Last name" class="spaced" id="lname">
+              <i><p class="error lname">Last Name section cannot be empty!</p></i>
+              <input type="email" placeholder="Your Email Address" class="spaced" id="email">
+              <i><p class="error email">Please use valid email address with @ symbol!</p></i>
+              <input type="password" placeholder="Password" class="spaced" id="password">
+              <i><p class="error password">Password cannot be empty!</p></i>
+              <button class="spaced" type="submit" form="form1">
+                CLAIM YOUR FREE TRIAL 
+              </button>
+              <span class="spaced">By clicking the button, you are agreeing to our <a href="#">Terms and Services</a></span>
+            </form>
+          </div>
+        </div>
+      </div>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,224 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+  }
+  body,
+  html {
+    height: 100%;
+  }
+  .bdr {
+    border: 2px solid black;
+  }
+  body {
+    background: url(./images/bg-intro-mobile.png) hsl(0, 100%, 74%);
+  }
+  main {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* I used 100vh because i needed to position the items well */
+    height: auto;
+  }
+  .main {
+    display: flex;
+    flex-direction: column;
+  }
+  .first {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .desc {
+    margin-top: 40px;
+    padding: 12px;
+    text-align: center;
+    color: hsl(0, 0%, 100%);
+  }
+  h1 {
+    font-size: 30px;
+    line-height: 30px;
+    font-weight: 700;
+  }
+  h4 {
+    font-size: 15px;
+    margin-top: 20px;
+    color: hsl(0, 0%, 100%, 0.8);
+  }
+  .second {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+  }
+  .sub-second {
+    background: hsl(248, 32%, 49%);
+    width: 94%;
+    color: hsl(0, 0%, 100%, 0.85);
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 7px;
+    box-shadow: 1px 5px 2px #50479466;
+  }
+  .sub-second h5 {
+    font-size: 13px;
+  }
+  .sub-second :nth-child(2) {
+    margin-left: 3px;
+  }
+  .bold {
+    color: hsl(0, 0%, 100%);
+  }
+  .form-container {
+    margin-top: 25px;
+    border-radius: 5px;
+  }
+  /* .sub-second, .form-container{
+    width: 90%;
+  } */
+  .spaced {
+    margin-top: 15px;
+  }
+  p{ 
+    font-weight: 500;
+  }
+  form .error{
+    font-size: 10px;
+    text-align: end;
+    margin-top: 5px;
+    color: hsl(0, 100%, 74%);
+  }
+  form .sucess{
+    font-size: 11px;
+    color: hsl(154, 59%, 51%);
+    text-align: center;
+    margin-bottom: 5px;
+  }
+  .error, .sucess{
+    display: none;
+  }
+  form {
+    display: flex;
+    flex-direction: column;
+    padding: 35px;
+    background: hsl(0, 0%, 100%);
+    border-radius: 5px;
+  }
+  input {
+    padding: 15px;
+    outline: 0;
+    border: 1px solid hsl(249, 10%, 26%, 0.3);
+    border-radius: 5px;
+    font-size: 13px;
+    color: black;
+    /* padding-left: 15px; */
+  }
+  input[type="password"] {
+    font-family: Verdana;
+    font-size: 18px;
+  }
+  ::placeholder {
+    color: hsl(0,0%,0%, 0.7);
+    font-weight: 400;
+    font-size: 15px;
+  }
+  button {
+    width: 100%;
+    cursor: pointer;
+    height: 40px;
+    font-weight: 600;
+    font-size: 15px;
+    color: hsl(0, 0%, 100%);
+    background: hsl(154, 59%, 51%);
+    border: 0;
+    outline: 0;
+    border-radius: 5px;
+    box-shadow: 1px 3px 3px hsl(154, 33%, 34%);
+  }
+  button:hover{
+    background: hsl(154, 56%, 40%);
+  }
+  span{
+      display: flex;
+      flex-direction: column;
+      font-size: 11px;
+      justify-content: center;
+      align-items: center;
+      color: hsl(246, 25%, 77%);
+  }
+  a{
+      text-decoration: none;
+      color: hsl(0, 100%, 74%);
+      font-weight: 600;
+  }
+  a:hover{
+    text-decoration: underline solid hsl(0, 100%, 74%);
+  }
+  @media screen and (min-width: 500px) and (max-width: 1028px) {
+    .sub-second{
+      width: 400px;
+    }
+  }
+  @media screen and (min-width: 1028px) {
+    body {
+      background: url(./images/bg-intro-desktop.png) hsl(0, 100%, 74%);
+    }
+    main {
+      width: 100%;
+      height: 100vh;
+    }
+    .main {
+      width: 70%;
+      /* remove this height later */
+      /* height: 63%; */
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-column-gap: 30px;
+      /* padding: 30px; */
+    }
+    .desc {
+      margin-top: 0px;
+      padding: 0px;
+      text-align: left;
+    }
+    h1 {
+      font-size: 43px;
+      line-height: 45px;
+      font-weight: 700;
+    }
+    h4 {
+      font-size: 14px;
+      margin-top: 20px;
+    }
+    .second {
+      margin-top: 0;
+      /* padding: 0; */
+    }
+    /* .sub-second, .form-container{
+      width: 100%;
+    } */
+    .sub-second {
+      flex-direction: row;
+      width: 100%;
+    }
+    .form-container {
+      margin-top: 15px;
+    }
+    .spaced{
+      margin-top: 12px;
+    }
+    span{
+      flex-direction: row;
+    }
+    span a{
+      margin-left: 3px;
+    }
+  }
+  
